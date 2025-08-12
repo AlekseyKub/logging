@@ -1,6 +1,6 @@
 <?php
 
-namespace AlekseyKub\Logging\Providers;
+namespace AlekseyKub\Logging;
 
 use Illuminate\Support\ServiceProvider;
 use AlekseyKub\Logging\Console\Commands\CopyConfigCommand;

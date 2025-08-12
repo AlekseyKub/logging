@@ -61,7 +61,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AlekseyKub\\Logging\\Providers\\LoggingServiceProvider"
+                "AlekseyKub\\Logging\\LoggingServiceProvider"
             ]
         }
     },
