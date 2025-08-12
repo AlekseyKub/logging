@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AlekseyKub\\Logging\\": "src/"
+            "Severnaya\\Logging\\": "src/"
         }
     },
     "autoload-dev": {
@@ -61,7 +61,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AlekseyKub\\Logging\\LoggingServiceProvider"
+                "Severnaya\\Logging\\LoggingServiceProvider"
             ]
         }
     },

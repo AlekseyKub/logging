@@ -1,6 +1,6 @@
 <?php
 
-namespace AlekseyKub\Logging\Console\Commands;
+namespace Severnaya\Logging\Console\Commands;
 
 use Illuminate\Console\Command;
 
@@ -37,7 +37,7 @@ class CopyConfigCommand extends Command
         }
 
         $this->call('vendor:publish', [
-            '--provider' => 'AlekseyKub\Logging\YourServiceProvider',
+            '--provider' => 'Severnaya\Logging\YourServiceProvider',
             '--tag' => 'logging-migrations',
             '--force' => true,
         ]);

@@ -10,9 +10,9 @@ return new class extends Migration
     {
         Schema::create('models_logs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
-            $table->unsignedBigInteger('model_id');
-            $table->string('model_type');
+            $table->foreignId('user_id')->nullable()->constrained('users');
+            $table->morphs('loggable');
+            $table->string('column')->nullable();
             $table->text('value_old')->nullable();
             $table->text('value_new')->nullable();
             $table->string('action');
