@@ -62,8 +62,7 @@
         "laravel": {
             "providers": [
                 "AlekseyKub\\Logging\\Providers\\LoggingServiceProvider"
-            ],
-            "dont-discover": []
+            ]
         }
     },
     "config": {
