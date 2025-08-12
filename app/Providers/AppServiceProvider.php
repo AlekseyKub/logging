@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace AlekseyKub\Logging\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
