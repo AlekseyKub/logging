@@ -10,6 +10,7 @@ return new class extends Migration
     {
         Schema::create('models_logs', function (Blueprint $table) {
             $table->id();
+            
             $table->foreignId('user_id')->nullable()->constrained('users');
             $table->morphs('loggable');
             $table->string('column')->nullable();
@@ -17,6 +18,8 @@ return new class extends Migration
             $table->text('value_new')->nullable();
             $table->string('action');
             $table->text('description')->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }

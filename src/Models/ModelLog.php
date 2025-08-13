@@ -3,9 +3,12 @@
 namespace Severnaya\Logging\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ModelLog extends Model
 {
+    use SoftDeletes;
+
     protected $table = 'models_logs';
 
     protected $fillable = [
