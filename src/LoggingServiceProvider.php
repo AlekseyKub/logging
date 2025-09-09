@@ -20,10 +20,10 @@ class LoggingServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . "/../database/migrations");
 
         $this->publishes([
-            __DIR__ . '/../config/logging.php' => config_path('logging.php'),
+            __DIR__ . '/../config/logging_models.php' => config_path('logging_models.php'),
         ], 'config');
 
-        $models = config('logging.models', []);
+        $models = config('logging_models.models', []);
         foreach ($models as $model) {
             $model::observe(ModelObserver::class);
         }

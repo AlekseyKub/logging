@@ -80,7 +80,7 @@ class ModelObserver
 
     protected function shouldLog(Model $model): bool
     {
-        $models = config('logging.models', []);
+        $models = config('logging_models.models', []);
         return in_array(get_class($model), $models, true);
     }
 }
